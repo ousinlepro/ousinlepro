@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    color: rgb(93, 101, 109);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://i.ibb.co/4d8CYtM/background-header.jpg);
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    outline: none;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.icones {
+    height: 30px;
+}
