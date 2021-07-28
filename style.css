@@ -42,3 +42,11 @@ header h1 {
 .icones {
     height: 30px;
 }
+
+.logo1 {
+    height: 50px;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* templates */
