@@ -45,8 +45,12 @@ header h1 {
 
 .logo1 {
     height: 50px;
-    justify-content: center;
     margin: 5px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
 }
 
 /* templates */
