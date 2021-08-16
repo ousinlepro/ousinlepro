@@ -24,6 +24,7 @@ nav h1 {
     color: #717171;
     font-family: 'Playfair Display', serif;
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .onglets {
@@ -64,7 +65,12 @@ header h4 {
 }
 
 header button {
-
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  
+    text-transform: uppercase;
     padding: 10px 20px;
     background-color: white;
     color: black;
@@ -74,6 +80,15 @@ header button {
     outline: none;
     cursor: pointer;
 
+}
+
+.reseaux-sociaux {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
 
 .main{
@@ -108,33 +123,20 @@ footer {
     margin-top: 60px;
 }
 
-footer h1 {
-    font-family: 'Playfair Display', serif;
-    border-bottom: 1px solid white;
-    width: 185px;
-    padding-bottom: 5px;
+
+.facebook,
+.instagram,
+.youtube {
+    padding: 5px;
 }
 
-footer .services {
-    margin-top: -10px;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-footer .services .service {
-    margin-right: 30px;
-    padding: 10px;
-}
-
-footer .services .service p {
-    max-width: 300px;
-}
-
-.contact {
+#contact {
     font-family: 'Montserrat', serif;
     color: rgb(181, 181, 181);
 }
 
+/*  pour renre mon site responisve
     @media screen and (max-width:680px){
         nav .onglets {
             margin-left: 0px;
@@ -155,3 +157,4 @@ footer .services .service p {
             padding: 30px;
         }
     }
+*/
