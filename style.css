@@ -117,14 +117,27 @@ header button {
 }
 
 footer {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-top: 5px solid #6f6f6f;
-    padding: 30px 100px;
+    padding: 10px 100px;
     margin-top: 60px;
+    margin-bottom: -20px;
 }
 
-
+footer .reseaux-sociaux .facebook,
+.instagram,
+.youtube {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+}
 
 #contact {
     font-family: 'Montserrat', serif;
