@@ -91,6 +91,12 @@ header button {
 	align-content: stretch;
 }
 
+.facebook,
+.instagram,
+.youtube {
+    padding: 5px;
+}
+
 .main{
     margin-top: 40px;
     display: flex;
@@ -124,20 +130,29 @@ footer {
 }
 
 
-.facebook,
-.instagram,
-.youtube {
-    padding: 5px;
-}
-
 
 #contact {
     font-family: 'Montserrat', serif;
     color: rgb(181, 181, 181);
 }
 
-/*  pour renre mon site responisve
+/*  pour renre mon site responisve */
     @media screen and (max-width:680px){
+        .reseaux-sociaux {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+        }
+        
+        .facebook,
+        .instagram,
+        .youtube {
+            padding: 5px;
+        }
+        
         nav .onglets {
             margin-left: 0px;
             margin-bottom: 20px;
@@ -157,4 +172,3 @@ footer {
             padding: 30px;
         }
     }
-*/
