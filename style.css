@@ -195,10 +195,24 @@ footer .fab {
     @media screen and (max-width:680px){
         @keyframes example {
             0%   {color: #717171; bottom:0px; top:0px;}
-            25%  {color:rgb(180, 179, 179); bottom:40px; top:0px;}
-            50%  {color:rgba(238, 74, 216, 0.767); bottom:40px; top:40px;}
-            75%  {color:green; bottom:0px; top:40px;}
+            25%  {color:rgb(180, 179, 179); bottom:20px; top:0px;}
+            50%  {color:rgba(238, 74, 216, 0.767); bottom:20px; top:20px;}
+            75%  {color:green; bottom:0px; top:20px;}
             100% {color:rgb(0, 0, 0); bottom:0px; top:0px;}
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: center;
+        }
+
+        nav h1 {
+            padding-left: 50px;
+            text-align: center;
         }
 
         .reseaux-sociaux {
