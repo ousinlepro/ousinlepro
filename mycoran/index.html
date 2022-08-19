@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./coran.png">
+    <title>Coran</title>
+</head>
+<body>
+    <h1 class="title">Coran</h1>
+    <py-env>
+- numpy
+- pyquran
+- pyarabic
+    </py-env>
+    <py-script src="./main.py"></py-script>
+    <h4 class="sub-title">Chercher un verset dans le coran</h4>
+    <form onsubmit="return false">
+        <input type="number" id="sura" placeholder="sourate">
+        <input type="number" id="verse" placeholder="verset">
+        <input type="submit" value="Verset" id="btn-form" pys-onClick="myverse">
+        <!--<input type="submit" value="Sourate" id="btn-form2" pys-onClick="mysura"> -->
+    </form>
+
+    <p>Output:</p>
+    <p id = 'output'>
+        
+    </p>
+    
+</body>
+</html>
+<!-- https://github.com/pyscript/pyscript/blob/main/docs/tutorials/getting-started.md-->
