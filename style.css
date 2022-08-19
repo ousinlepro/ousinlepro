@@ -31,7 +31,7 @@ nav h1 {
     animation-duration: 4s;
     animation-delay: 2s;
   }
-  
+/*
 @keyframes example {
     0%   {color: #717171; left:0px; right:0px;}
     25%  {color:rgb(180, 179, 179); left:200px; right:0px;}
@@ -39,7 +39,7 @@ nav h1 {
     75%  {color:green; left:0px; right:200px;}
     100% {color:rgb(0, 0, 0); left:0px; top:0px;}
 }
-
+*/
 
 .onglets {
     margin-top: 5px;
@@ -152,7 +152,7 @@ header .fab {
 .link-button{
     border-radius: 5px;
     text-align: center;
-    width: 140px;
+    width: 150px;
     background-color:white;
     color: black;
     cursor: pointer;
@@ -209,13 +209,6 @@ footer .fab {
 
 /*  pour rendre mon site responisve */
     @media screen and (max-width:680px){
-        @keyframes example {
-            0%   {color: #717171; bottom:0px; top:0px;}
-            25%  {color:rgb(180, 179, 179); bottom:20px; top:0px;}
-            50%  {color:rgba(238, 74, 216, 0.767); bottom:20px; top:20px;}
-            75%  {color:green; bottom:0px; top:20px;}
-            100% {color:rgb(0, 0, 0); bottom:0px; top:0px;}
-        }
 
         nav {
             display: flex;
@@ -287,6 +280,9 @@ footer .fab {
         }
         .main .content .card{
             display: block;
+        }
+        .link-button{
+            position: relative;
         }
         footer{
             padding: 30px;
