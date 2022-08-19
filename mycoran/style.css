@@ -17,6 +17,7 @@ div {
     font-size: 30px;
     color: black;
     background-color: rgb(221, 221, 221);
+    text-align: right;
 }
 
 input[type=number], select {
