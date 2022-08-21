@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+    <script src="https://kit.fontawesome.com/6cea6b4fc3.js" crossorigin="anonymous"></script>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./coran.png">
+    <title>Poid mystique</title>
+</head>
+<body>
+    <h1 class="title">Calculatrice de valeur numérique arabe</h1>
+    <py-env>
+    </py-env>
+    <py-script src="./main.py"></py-script>
+    <main>
+        <h4 class="sub-title"></h4>
+        <form class="search-bar" onsubmit="return false">
+            <input type="text" id="search" placeholder="Veuillez saisir ici" name="q" >
+            <button type="submit"id="btn-form" pys-onClick="pm"><img src="../images/search2.png" alt=""></button>
+            <!--<input type="submit" value="Sourate" id="btn-form2" pys-onClick="mysura"> -->
+        </form>
+
+    <p id = 'output'><p id="valeur-num"></p></p>
+
+    </main>
+
+    <footer>
+        <div class="reseaux-sociaux">
+            <a href="https://www.facebook.com/ousseynou.ndione.509"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/ousin_le_pro"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/channel/UC25LIh8OqxUTjOPE9neWQHA"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://twitter.com/ousinlepro"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+        <p id="contact">Contact : 77 162 61 68 | &copy; 2022, Ousin.</p>
+    </footer>
+</body>
+</html>
+<!-- https://github.com/pyscript/pyscript/blob/main/docs/tutorials/getting-started.md-->
