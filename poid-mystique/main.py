@@ -1,3 +1,4 @@
+import js
 
 l1 = 'ا'
 l2 = 'ب'
@@ -30,6 +31,7 @@ l28 = 'ش'
 
 l29 = 'ة'
 l30 = 'ء'
+l31 = ' '
 
 
 sum_dict = {l1 : 1, l2 : 2, l3 : 3, l4 : 4,  
@@ -39,13 +41,23 @@ sum_dict = {l1 : 1, l2 : 2, l3 : 3, l4 : 4,
             l17 : 80, l18 : 90, l19 : 100, l20 : 200,
             l21 : 300, l22 : 400, l23 : 500, l24 : 600, 
             l25 : 700, l26 : 800, l27 : 900, l28 : 1000,
-            l29 : 5, l30:1} 
+            l29 : 5, l30:1, l31:0} 
 def pm(*args, **kwargs):  
     entry = Element('search').value
     opt = Element('output')
     opt2 = Element('valeur-num')
-    res = sum(sum_dict[ele] for ele in entry.replace(' ', '')) 
-    opt.write(f"Sa valeur numerique est de: ")
-    opt2.write(f"{str(res)}")
+
+    if entry == '':
+        js.alert('Le champ est vide')
+        quit()
+    else:
+        pass
+
+    try:
+        res = sum(sum_dict[ele] for ele in entry) 
+        opt.write(f"Sa valeur numerique est de: ")
+        opt2.write(f"{str(res)}")
+    except:
+        js.alert('Erreur de saisie')
     
 
