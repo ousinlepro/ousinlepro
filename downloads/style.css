@@ -1,0 +1,51 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+}
+
+.viewbot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+/* Darker background on mouse-over */
+.btn:hover {
+background-color: RoyalBlue;
+}
+
+/* --------------------------------------------------- */
+@media screen and (max-width:680px){
+    img {
+        width: 250px;
+    }
+    .btn {
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 15px;
+      }
+}
