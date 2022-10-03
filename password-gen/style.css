@@ -1,0 +1,131 @@
+@import url('http://fonts.cdnfonts.com/css/neo-sans-pro');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #d4d4d4;
+}
+header {
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+header h1 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    margin: 7px;
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+h1 label {
+    color: red;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+}
+
+section {
+    margin-bottom: 90px;
+    height: 130px;
+}
+section p {
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    color: #d22;
+    font-weight: bold;
+}
+section h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    margin: 7px;
+    position: relative;
+    text-transform: uppercase;
+}
+#div-password-generated {
+    height: 50px;
+    width: 500px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+    border: 0;
+    outline: 0;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+}
+#div-password-generated input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.copy-img{
+    height: 30px;
+}
+.copy-btn {
+    border: none;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    background: transparent;
+}
+.copy-btn:hover + .copyInfo{
+    display: block;
+
+}
+
+.copy-btn:hover {
+    cursor: pointer;
+}
+
+.copyInfo {
+    display: none;
+    position: absolute;
+    right: 445px;
+    top: 340px;
+    background: white;
+    padding: 5px;
+}
+.perso
+input[type='checkbox']{
+    accent-color: #af4c4c;
+}
+input[type='checkbox']:hover {
+    cursor: pointer;
+}
+input[type='submit'] {
+    margin-top: 25px;
+    background-color: #af4c4c; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+input[type='submit']:hover {
+    cursor: pointer;
+}

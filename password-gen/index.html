@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/passGenIco.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6cea6b4fc3.js" crossorigin="anonymous"></script>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <py-env>
+- pandas
+    </py-env>
+    <py-script src="./main.py"></py-script>
+    <script src="script.js"></script>
+
+    <header>
+        <h1 class="title">Password <label>Generator</label></h1>
+    </header>
+    <main>
+        <section>
+            <p>OUTIL DE GÉNÉRATION DE MOTS DE PASSE</p>
+            <h1>Générez un mot de passe sécurisé</h1>
+        </section>
+        <div id="div-password-generated">
+            <input id="password-generated" type="text">
+            <button id="copy-btn" class="copy-btn" onclick="myFunction()">
+                <img class="copy-img" src="../images/copy.png" alt="">
+            </button>
+            <div class="copyInfo">Copier</div>
+        </div>
+        <div class="perso">
+            <input type="checkbox" name="upper" id="upper" checked><label for="">Majuscule</label>
+            <input type="checkbox" name="digits" id="digits"><label for="">Chiffres</label>
+            <input type="checkbox" name="ponct" id="ponct"><label for="">Symboles</label>
+            
+        </div>
+        <input id="btn-form"type="submit" value="GENERATE" pys-onClick="genrt">
+        
+    </main>
+</body>
+</html>
