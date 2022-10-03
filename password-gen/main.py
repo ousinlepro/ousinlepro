@@ -7,12 +7,16 @@ import pandas as pd
 from js import navigator
 
 
+document.getElementById('len').value = 8
 def genrt(*args, **kwargs):
+    btn = document.getElementById('btn-form')
+    #btn.style.backgroundColor = "red"
     upper = document.getElementById("upper").checked
     digits = document.getElementById("digits").checked
     ponct = document.getElementById("ponct").checked
 
     inp = document.getElementById("password-generated")
+    len = int(document.getElementById('len').value)
     letters = string.ascii_lowercase
     if upper == True:
         letters += string.ascii_uppercase
@@ -21,12 +25,12 @@ def genrt(*args, **kwargs):
     if ponct == True:
         letters += string.punctuation
 
-    len = 8
     pw=''
     for i in range(len):
         l = random.choice(letters)
         pw+=l
     
     inp.value = pw
+
 
 genrt()

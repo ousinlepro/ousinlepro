@@ -36,9 +36,16 @@
             <div class="copyInfo">Copier</div>
         </div>
         <div class="perso">
-            <input type="checkbox" name="upper" id="upper" checked><label for="">Majuscule</label>
-            <input type="checkbox" name="digits" id="digits"><label for="">Chiffres</label>
-            <input type="checkbox" name="ponct" id="ponct"><label for="">Symboles</label>
+            <div class="check">
+                <input type="checkbox" name="upper" id="upper" checked><label for="">Majuscule</label>
+                <input type="checkbox" name="digits" id="digits"><label for="">Chiffres</label>
+                <input type="checkbox" name="ponct" id="ponct"><label for="">Symboles</label>
+            </div>
+            <div class="div-len">
+                <label for="">Longueur du mot de passe</label>
+                <input type="number" name="" id="len">
+    
+            </div>
             
         </div>
         <input id="btn-form"type="submit" value="GENERATE" pys-onClick="genrt">
