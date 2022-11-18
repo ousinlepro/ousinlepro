@@ -1,17 +1,18 @@
 from urllib.request import urlopen
-
+import csv
 import requests
 
+
 url = "https://raw.githubusercontent.com/ousinlepro/ousinlepro.github.com/main/notes-db.csv"
+
+
 page = requests.get(url)
-print(page.text)
+txt = page.text
 
-"""
+content = list(csv.reader(str(page.text)))
 
+for line in content:
+    print(line[0])
 
-f = urlopen('https://api.github.com/repos/ousinlepro/ousinlepro.github.com/contents/notes-db.csv')
+#print(page.text)
 
-for line in f:
-    print(line.decode('utf-8'))
-
-"""
