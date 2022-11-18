@@ -1,4 +1,4 @@
-import statistics as s
+from statistics import mean
 from art import text2art
 import csv
 import re
@@ -13,15 +13,16 @@ with open('notes-db.csv',encoding='utf-8') as f:
 list_notes = []
 
 print()
-for line in file_content: # ATTENTION pour les decimaux seul 2 chiffres apres la virgule est pris encharge
+for line in file_content: 
 
     note = line[1:]
     if '.' in note:
-        note = float(note)
         note = map(lambda n: float(n), note)
+
     else:
-        note = int(note)
-        
+        note = map(lambda n: int(n), note)
+        #note = int(note)
+    note = mean(note)
     list_notes.append(note)
 
     print(line[0],note)
@@ -31,7 +32,7 @@ total = sum(list_notes)
 
 pts_t = 20*len(list_notes)
 
-m = s.mean(list_notes) # la moyenne
+m = mean(list_notes) # la moyenne
 #m = round(m,2) # arrondir la moyenne a 2 chiffres apres la virgule
 
 prc = (total * 100) / pts_t # la pourcentages de points
