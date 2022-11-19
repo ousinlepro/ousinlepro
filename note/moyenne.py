@@ -20,7 +20,7 @@ for line in file_content:
         note = map(lambda n: float(n), note)
 
     else:
-        note = map(lambda n: int(n), note)
+        note = map(lambda n: float(n), note)
         #note = int(note)
     note = mean(note)
     list_notes.append(note)
