@@ -1,10 +1,10 @@
-Moyenne: 15.36111111111111 
+Moyenne: 15.6875 
 
-    Meilleure note 18.25 
+    Meilleure note 19.0 
 
-    plus petite note: 12 
+    plus petite note: 12.0 
 
-    138 / 180 points 
+    188 / 240 points 
 
-    77% 
+    78% 
     

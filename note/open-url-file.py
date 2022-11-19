@@ -3,7 +3,7 @@ import csv
 import requests
 
 
-url = "https://raw.githubusercontent.com/ousinlepro/ousinlepro.github.com/main/notes-db.csv"
+url = "https://raw.githubusercontent.com/ousinlepro/ousinlepro.github.com/main/note/notes-db.csv"
 
 
 page = requests.get(url)

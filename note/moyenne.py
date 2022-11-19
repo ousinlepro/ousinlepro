@@ -9,7 +9,7 @@ import requests
 
 with open('notes-db.csv',encoding='utf-8') as f:
     file_content = list(csv.reader(f))
-
+    
 list_notes = []
 
 print()
@@ -22,7 +22,10 @@ for line in file_content:
     else:
         note = map(lambda n: float(n), note)
         #note = int(note)
-    note = mean(note)
+
+    note = float(mean(note))
+
+
     list_notes.append(note)
 
     print(line[0],note)
