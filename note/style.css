@@ -13,3 +13,37 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moyenne-devoirs {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 50px;
+    box-shadow: -3px 0px 16px -2px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -3px 0px 16px -2px rgba(0,0,0,0.51);
+    -moz-box-shadow: -3px 0px 16px -2px rgba(0,0,0,0.51);
+    padding: 25px;
+    width: 300px;
+}
+
+#matieres{
+    font-weight: bold;
+}
+
+#btn-form{
+    background-color: rgb(255, 197, 89);
+    cursor: pointer;
+    padding: 7px 15px;
+    font-weight: 25px;
+}
+
+#moyenne {
+    font-size: large;
+    font-weight: bold;
+}

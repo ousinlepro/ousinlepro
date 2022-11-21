@@ -1,5 +1,13 @@
 #from js import document
 from statistics import mean
+import js
+from js import document
+from time import sleep
+
+opt_matieres = Element('matieres')
+opt_notes = Element('notes')
+
+opt_moyenne = Element('moyenne')
 
 notes = {"Eco-Fam"  :mean([18]),
         "Redaction" :mean([12]),
@@ -12,7 +20,7 @@ notes = {"Eco-Fam"  :mean([18]),
         "PC"        :mean([12.5]),
         "EC"        :mean([19]),
         "EPS"       :mean([16]),
-        "HG"        :mean([16]),
+        "HG"        :mean([15]),
 }
 
 list_notes = []
@@ -26,8 +34,10 @@ for matiere in notes:
 
     list_notes.append(note)
 
-    print(matiere,note)
+    opt_matieres.write(matiere,note)
 
+for n in list_notes:
+    opt_notes.write(n,note)
 
 total = sum(list_notes)
 
@@ -38,11 +48,8 @@ m = mean(list_notes) # la moyenne
 
 prc = (total * 100) / pts_t # la pourcentages de points
 
-    
-print()
-print(f'[+] moyenne: {m}')
-print(f'[+] meilleure note: {max(list_notes)}')
-print(f'[+] plus petite note: {min(list_notes)}')
-print(f'[+] {total} / {pts_t} points')
-print(f'[+] {round(prc)}% ')
-print()
+def calcule(*args, **kwargs):
+    opt_moyenne.write(m)
+
+
+
