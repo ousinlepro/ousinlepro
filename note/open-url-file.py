@@ -9,10 +9,10 @@ url = "https://raw.githubusercontent.com/ousinlepro/ousinlepro.github.com/main/n
 page = requests.get(url)
 txt = page.text
 
-content = list(csv.reader(str(page.text)))
+content = str(page.text)
 
-for line in content:
-    print(line[0])
+print(content)
+
 
 #print(page.text)
 

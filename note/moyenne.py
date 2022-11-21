@@ -19,12 +19,8 @@ print()
 for line in file_content: 
 
     note = line[1:]
-    if '.' in note:
-        note = map(lambda n: float(n), note)
 
-    else:
-        note = map(lambda n: float(n), note)
-        #note = int(note)
+    note = map(lambda n: float(n), note)
 
     note = float(mean(note))
 
