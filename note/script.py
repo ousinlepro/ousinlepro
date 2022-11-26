@@ -19,7 +19,7 @@ notes = {"Eco-Fam"  :mean([18]),
         "Maths"     :mean([16]),
         "PC"        :mean([12.5]),
         "EC"        :mean([19]),
-        "EPS"       :mean([16]),
+        "EPS"       :mean([16,17]),
         "HG"        :mean([15]),
 }
 
@@ -44,7 +44,7 @@ total = sum(list_notes)
 pts_t = 20*len(list_notes)
 
 m = mean(list_notes) # la moyenne
-#m = round(m,2) # arrondir la moyenne a 2 chiffres apres la virgule
+m = round(m,2) # arrondir la moyenne a 2 chiffres apres la virgule
 
 prc = (total * 100) / pts_t # la pourcentages de points
 
