@@ -9,18 +9,18 @@ opt_notes = Element('notes')
 
 opt_moyenne = Element('moyenne')
 
-notes = {"Eco-Fam"  :mean([18]),
-        "Redaction" :mean([12]),
-        "Anglais"   :mean([17]),
+notes = {"Redaction":mean([12]),
         "TSQ"       :mean([17.5]),
-        "Espagnole" :mean([13]),
         "Dictee"    :mean([14]),
+        "Anglais"   :mean([17]),
+        "Espagnole" :mean([13]),
         "SVT"       :mean([18.25]),
         "Maths"     :mean([16]),
         "PC"        :mean([12.5]),
         "EC"        :mean([19]),
-        "EPS"       :mean([16,17]),
         "HG"        :mean([15]),
+        "Eco-Fam"   :mean([18]),
+        "EPS"       :mean([16,17]),
 }
 
 list_notes = []
@@ -28,13 +28,11 @@ list_notes = []
 
 for matiere in notes:
     note = notes.get(matiere)
-    #note = map(lambda n: float(n), note)
-
-    #note = float(mean(note))
 
     list_notes.append(note)
 
     opt_matieres.write(matiere,note)
+
 
 for n in list_notes:
     opt_notes.write(n,note)
