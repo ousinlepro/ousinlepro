@@ -1,7 +1,7 @@
 2e devoir
 
 Eco-Fam     ,19
-Redaction       ,15
+Redaction       ,14
 Anglais     ,19
 TSQ     ,18
 Espagnole       ,17
@@ -10,4 +10,4 @@ SVT     ,19
 Maths       ,17
 PC      ,17
 EC    19 
-EPS   15
+EPS   17
