@@ -16,11 +16,11 @@ notes = {"Redaction":mean([12]),
         "Espagnole" :mean([13,12]),
         "SVT"       :mean([18.25]),
         "Maths"     :mean([16]),
-        "PC"        :mean([12.5,15]),
+        "PC"        :mean([12.5,18]),
         "EC"        :mean([19]),
         "HG"        :mean([15]),
         "Eco-Fam"   :mean([18]),
-        "EPS"       :mean([16,17]),
+        "EPS"       :mean([16,17,9]),
 }
 
 list_notes = []
