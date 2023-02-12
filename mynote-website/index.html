@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Note de Commandes</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1>Note de Commandes</h1>
-    <div id="command-form">
-      <textarea id="command-input"></textarea>
-      <br>
-      <textarea id="comment-input"></textarea>
-      <br>
-      <button id="submit-button">Soumettre</button>
-    </div>
-    <h2>Commandes Notées</h2>
-    <ul id="command-list"></ul>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note de Commandes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
   <script src="script.js"></script>
+  <header>
+    <h1>Note de Commandes</h1>
+  </header>
+  <main>
+    <div id="cmd-div" >
+      <p id="commentaire">Faire un capture d'écran avec adb</p>
+      <span id="cmd">adb exec-out screencap -p > ./pic.png</span>
+    </div>
+
+    <div id="cmd-div" >
+      <p id="commentaire">Installer une apllication (le fichier se trouvant sur le pc)</p>
+      <span id="cmd">adb install nom_du_fichier.apk</span>
+    </div>
+
+    <div id="cmd-div" >
+      <p id="commentaire">Envoyer un fichier du pc a l'appareil android</p>
+      <span id="cmd">adb push nom_du_fichier.ext /chemin/sur/l'appareil/android</span>
+    </div>
+    
+    <div id="cmd-div" >
+      <p id="commentaire">Filtre la sortie de la commande "ls"</p>
+      <span id="cmd">ls | grep pattern</span>
+    </div>
+
+    <div id="cmd-div" >
+      <p id="commentaire">Trouver le nom de package d'un apk</p>
+      <span id="cmd">aapt dump badging filename.apk | grep package</span>
+    </div>
+  </main>
+  
+</body>
 </html>
 
     
